@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 <!-- Release notes generated with: gh release create v_draft --generate-notes --draft -->
 
-## [v0.58.1] - 2026-07-24
+## [v0.58.1] - 2026-07-27
 
 ### Added
 * feat(bindings/python): add from_uri constructor for Operator and AsyncOperator by @chitralverma in https://github.com/apache/opendal/pull/7869
@@ -36,6 +36,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 * fix(dev): sync parquet release version to 0.9.0 by @chitralverma in https://github.com/apache/opendal/pull/7936
 * fix(services/gcs): stop double-encoding object paths in writer by @chitralverma in https://github.com/apache/opendal/pull/7927
 * Revert "fix(services/gcs): stop double-encoding object paths in writer" by @erickguan in https://github.com/apache/opendal/pull/7943
+* fix(services/gcs): encode object paths exactly once by @Xuanwo in https://github.com/apache/opendal/pull/7947
 
 ### Docs
 * docs(python): fix broken Python API reference links (404) by @chitralverma in https://github.com/apache/opendal/pull/7872
@@ -47,12 +48,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 * docs: treat release candidates as tag-bound by @Xuanwo in https://github.com/apache/opendal/pull/7874
 * docs: polish inline documentations by @erickguan in https://github.com/apache/opendal/pull/7930
 * docs: correct layer behavior descriptions by @erickguan in https://github.com/apache/opendal/pull/7932
+* docs(python): migrate MkDocs setup to Zensical by @chitralverma in https://github.com/apache/opendal/pull/7951
+* doc(website): polish vote template by @erickguan in https://github.com/apache/opendal/pull/7953
+* docs: add READMEs for split crates by @Xuanwo in https://github.com/apache/opendal/pull/7961
 
 ### CI
 * ci: include http transports in rust release plan by @Xuanwo in https://github.com/apache/opendal/pull/7901
 * ci: upgrade nodejs release to npm 12 by @Xuanwo in https://github.com/apache/opendal/pull/7900
 * fix(ci): use NuGet login action instead of manual login nuget by @Fatorin in https://github.com/apache/opendal/pull/7903
 * ci: Fix Haskell CI cabal index update by @dentiny in https://github.com/apache/opendal/pull/7941
+* ci: fix python armhf release by excluding services-goosefs by @erickguan in https://github.com/apache/opendal/pull/7950
 
 ### Chore
 * chore(deps): bump bytes from 1.12.0 to 1.12.1 in /core in the http-serialization-utils group across 1 directory by @dependabot[bot] in https://github.com/apache/opendal/pull/7892
@@ -61,6 +66,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 * chore(goosefs): bump goosefs-sdk to 0.1.8 by @XuQianJin-Stars in https://github.com/apache/opendal/pull/7929
 * chore: include license and notice files in published crates by @ankane in https://github.com/apache/opendal/pull/7931
 * chore(deps): upgrade object_store to 0.14.1 by @Xuanwo in https://github.com/apache/opendal/pull/7935
+* chore(deps): bump cc to 1.4.0 by @erickguan in https://github.com/apache/opendal/pull/7958
 
 ### New Contributors
 * @anandubey made their first contribution in https://github.com/apache/opendal/pull/7386
